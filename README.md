@@ -81,7 +81,6 @@ mcp_server/server.py — http://localhost:8001
 | Provider | Modèle | Lien | Limite gratuite |
 |----------|--------|------|-----------------|
 | **Groq** *(recommandé)* | `llama-3.3-70b-versatile` | https://console.groq.com | 14 400 req/jour |
-| **Gemini** | `gemini-1.5-flash` | https://aistudio.google.com | 1 500 req/jour |
 | **Offline** | Template statique | *(aucune clé)* | Illimité |
 
 ---
