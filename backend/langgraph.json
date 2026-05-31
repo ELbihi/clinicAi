@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "clinai_graph": "./app/graph.py:get_graph"
+  },
+  "env": ".env"
+}

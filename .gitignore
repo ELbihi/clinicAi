@@ -1,0 +1,20 @@
+﻿# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+venv311/
+.venv/
+
+# LangGraph Studio (généré automatiquement)
+.langgraph_api/
+
+# Logs MCP
+mcp_server/data/*.log
+
+# Outputs de test
+backend/test_outputs/
+
+# VS Code
+.vscode/
