@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: clinai-api
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false   # vous le saisirez manuellement dans Render
+
+  - type: web
+    name: clinai-mcp
+    runtime: python
+    rootDir: mcp_server
+    buildCommand: pip install fastapi uvicorn
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
